@@ -15,7 +15,7 @@ def get_openai_response(question):
     response = llm(question)
     return response
 
-
+#create route
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
